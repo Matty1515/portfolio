@@ -1,6 +1,6 @@
-/* jshint esversion: 6 */ 
+/* jshint esversion: 6 */
 $(document).ready(() => {
 	
-document.getElementById('testTitle').innerHTML = "JavaScript is working!";
+console.log('JavaScript is working!');
 
 });
