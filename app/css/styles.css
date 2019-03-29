@@ -76,6 +76,7 @@ a {
 
 /* ===== 4) Content Left ===== */
 h1 {
+  font-family: "Times New Roman", Times, serif;
   line-height: 0.75;
   font-size: 150px;
   color: #e83c38;
@@ -118,7 +119,8 @@ section {
   margin-bottom: 15px; }
 
 .content-info {
-  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 21px;
   font-weight: 500;
   margin-bottom: 30px; }
 
@@ -176,6 +178,9 @@ section {
 
 #gmc .border-element {
   background-color: #2d303a; }
+
+#err-fade-in, #gmc-fade-in, #tsm-fade-in {
+  display: none; }
 
 /* ===== 7) Media Queries ===== */
 @media only screen and (max-width: 1000px) {

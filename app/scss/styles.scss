@@ -17,6 +17,9 @@ $silver: #c1c1c1;
 $darkgrey: #2d303a;
 $title-red: #e83c38;
 
+$font-header: "Times New Roman", Times, serif;
+$font-content: "Times New Roman", Times, serif;
+
 /* ===== 2) Full Page & Grid ===== */
 
 html, body {
@@ -87,17 +90,18 @@ a {
 
 /* ===== 4) Content Left ===== */
 h1 {
-  line-height: 0.75;
-  font-size: 150px;
-  color: $title-red;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	font-family: $font-header;
+  	line-height: 0.75;
+  	font-size: 150px;
+  	color: $title-red;
+  	margin-top: 10px;
+  	margin-bottom: 30px;
+  	-webkit-touch-callout: none;
+  	-webkit-user-select: none;
+  	-khtml-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
 }
 .header-one {
 	font-size: 180px;
@@ -130,9 +134,10 @@ section {
   margin-bottom: 15px;
 }
 .content-info {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 30px;
+	font-family: $font-content;
+  	font-size: 21px;
+  	font-weight: 500;
+  	margin-bottom: 30px;
 }
 .subheader-skills {
   margin-left: -8px;
@@ -187,6 +192,9 @@ section {
 }
 #gmc .border-element {
 	background-color: $darkgrey;
+}
+#err-fade-in, #gmc-fade-in, #tsm-fade-in {
+	display: none;
 }
 
 /* ===== 7) Media Queries ===== */
