@@ -13,7 +13,7 @@ const animateOnScroll = function(scrollDiv, scrollTarget) {
 	   }
 	});
 };
-animateOnScroll('#err', '#err-fade-in');
+// animateOnScroll('#err', '#err-fade-in'); add this back in when first page is done
 animateOnScroll('#gmc', '#gmc-fade-in');
 animateOnScroll('#tsm', '#tsm-fade-in');
 

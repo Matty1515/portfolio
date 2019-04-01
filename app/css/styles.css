@@ -10,6 +10,8 @@
 */
 /* ===== 1) House Style ===== 
 -Add fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 /* ===== 2) Full Page & Grid ===== */
 html, body {
   margin: 0;
@@ -23,6 +25,24 @@ a {
   background-color: #ebeded;
   padding-top: 2px;
   padding-bottom: 2px; }
+
+.scrollbar {
+  position: fixed;
+  right: 10px;
+  bottom: 50px; }
+
+.scrollbar li {
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  color: #c1c1c1;
+  border: 2px solid #c1c1c1;
+  transition: 0.5s; }
+
+.scrollbar li:hover {
+  cursor: pointer;
+  transform: scale(1.05); }
 
 ::-webkit-scrollbar {
   width: 10px; }
@@ -107,7 +127,8 @@ h2 {
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-  float: left; }
+  float: left;
+  font-family: "Poppins", sans-serif; }
 
 section {
   margin-left: 20px; }
@@ -119,10 +140,11 @@ section {
   margin-bottom: 15px; }
 
 .content-info {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  /* line-height: 130%; */ }
 
 .subheader-skills {
   margin-left: -8px; }
@@ -179,7 +201,8 @@ section {
 #gmc .border-element {
   background-color: #2d303a; }
 
-#err-fade-in, #gmc-fade-in, #tsm-fade-in {
+#gmc-fade-in, #tsm-fade-in {
+  /* add #err-fade-in, back in when first page is done */
   display: none; }
 
 /* ===== 7) Media Queries ===== */

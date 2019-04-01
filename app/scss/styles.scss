@@ -12,13 +12,16 @@
 /* ===== 1) House Style ===== 
 -Add fonts */
 
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 $lightgrey: #ebeded;
 $silver: #c1c1c1;
 $darkgrey: #2d303a;
 $title-red: #e83c38;
 
 $font-header: "Times New Roman", Times, serif;
-$font-content: "Times New Roman", Times, serif;
+$font-content: 'Poppins', sans-serif;
 
 /* ===== 2) Full Page & Grid ===== */
 
@@ -34,6 +37,24 @@ a {
 	background-color: $lightgrey;
 	padding-top: 2px;
 	padding-bottom: 2px;
+}
+.scrollbar {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+}
+.scrollbar li {
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  color: $silver;
+  border: 2px solid $silver;
+  transition: 0.5s;
+}
+.scrollbar li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 ::-webkit-scrollbar {
   	width: 10px;
@@ -122,6 +143,7 @@ h2 {
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
   float: left;
+  font-family: $font-content;
 }
 section {
   margin-left: 20px;
@@ -135,25 +157,26 @@ section {
 }
 .content-info {
 	font-family: $font-content;
-  	font-size: 21px;
+  	font-size: 18px;
   	font-weight: 500;
   	margin-bottom: 30px;
+  	/* line-height: 130%; */
 }
 .subheader-skills {
-  margin-left: -8px;
+  	margin-left: -8px;
 }
 .content-skills i {
-  line-height: 0.7;
-  font-size: 80px;
-  padding-right: 70px;
-  transition: 0.5s;
+  	line-height: 0.7;
+  	font-size: 80px;
+  	padding-right: 70px;
+  	transition: 0.5s;
 }
 .content-skills i:hover {
 	transform: scale(1.05);
 	opacity: 0.9;
 }
 .icons-two {
-  margin-left: 45px;
+  	margin-left: 45px;
 }
 
 /* ===== 5) Content Right ===== 
@@ -193,7 +216,8 @@ section {
 #gmc .border-element {
 	background-color: $darkgrey;
 }
-#err-fade-in, #gmc-fade-in, #tsm-fade-in {
+#gmc-fade-in, #tsm-fade-in {
+	/* add #err-fade-in, back in when first page is done */
 	display: none;
 }
 
