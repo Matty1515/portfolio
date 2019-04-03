@@ -29,6 +29,7 @@ html, body {
   	margin: 0;
   	padding: 0;
   	overflow-x: hidden;
+  	scroll-behavior: smooth;
 }
 a {
 	text-decoration: none;
@@ -172,7 +173,7 @@ section {
   	transition: 0.5s;
 }
 .content-skills i:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 	opacity: 0.9;
 }
 .icons-two {
