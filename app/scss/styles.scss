@@ -19,6 +19,7 @@ $lightgrey: #ebeded;
 $silver: #c1c1c1;
 $darkgrey: #2d303a;
 $title-red: #e83c38;
+$title-blue: #5fb2d4;
 
 $font-header: "Times New Roman", Times, serif;
 $font-content: 'Poppins', sans-serif;
@@ -30,6 +31,10 @@ html, body {
   	padding: 0;
   	overflow-x: hidden;
   	scroll-behavior: smooth;
+}
+img {
+	height: 100%;
+	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -184,26 +189,32 @@ section {
 -Add the real images */
 
 .placeholder-img {
+	background-color: white;
 	float: right;
-	height: 300px;
-	width: 535px; /* fits the 1920 / 1080 ratio: 1.78 */
+	height: 250px;
+	width: 528px; /* fits the 2.11 ratio to make the image look right */
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	margin-right: -110px;
 	margin-top: 30px;
-	border: 2px dashed $silver; /* get rid of this when img added */
 	transition: 0.5s;
+	border: 5px solid white;
+  	border-radius: 10px;
+
 }
 .image-two {
+	background-color: white;
   	float: right;
-  	height: 300px;
-  	width: 535px; /* fits the 1920 / 1080 ratio: 1.78 */
+  	height: 250px;
+	width: 528px; /* fits the 2.11 ratio to make the image look right */
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   	margin-right: -20px;
-  	border: 2px dashed $silver; /* get rid of this when img added */
   	z-index: 1;
-  	margin-top: -50px;
+  	margin-top: 20px;
   	transition: 0.5s;
+  	border: 5px solid white;
+  	border-radius: 10px;
 }
 .placeholder-img:hover, .image-two:hover {
-  	opacity: 0.9;
   	transform: scale(1.02);
 }
 
@@ -220,6 +231,9 @@ section {
 #gmc-fade-in, #tsm-fade-in {
 	/* add #err-fade-in, back in when first page is done */
 	display: none;
+}
+#tsm h1, #tsm h2 {
+	color: $title-blue;
 }
 
 /* ===== 7) Media Queries ===== */
