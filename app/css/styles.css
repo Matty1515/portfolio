@@ -200,20 +200,20 @@ section {
   transform: scale(1.02); }
 
 /* ===== 6) Alternative Styles ===== */
-#gmc .full-page {
+#gmc .full-page, #rca .full-page {
   background-color: #2d303a; }
 
-#gmc .content {
+#gmc .content, #rca .content {
   color: #ebeded; }
 
-#gmc .border-element {
+#gmc .border-element, #rca .border-element {
   background-color: #2d303a; }
 
-#gmc-fade-in, #tsm-fade-in {
+#gmc-fade-in, #tsm-fade-in, #rca-fade-in {
   /* add #err-fade-in, back in when first page is done */
   display: none; }
 
-#tsm h1, #tsm h2 {
+#tsm h1, #tsm h2, #rca h1, #rca h2 {
   color: #5fb2d4; }
 
 /* ===== 7) Media Queries ===== */

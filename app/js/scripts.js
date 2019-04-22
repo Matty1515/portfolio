@@ -8,6 +8,7 @@ let buttonScroll = function() {
 		errHeight = $('#err').offset().top;
 		gmcHeight = $('#gmc').offset().top;
 		tsmHeight = $('#tsm').offset().top;
+		rcaHeight = $('#rca').offset().top;
 		if (currentPosition >= errHeight && currentPosition < gmcHeight) {
 			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, 0);
@@ -22,12 +23,19 @@ let buttonScroll = function() {
 			$('#scrollDown').on('click', () => {
 				window.scrollTo(0, $('#tsm').offset().top + 5);
 			});
-		} else if (currentPosition >= tsmHeight) {
+		} else if (currentPosition >= tsmHeight && currentPosition < rcaHeight) {
 			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, $('#gmc').offset().top + 5);
 			});
 			$('#scrollDown').on('click', () => {
+				window.scrollTo(0, $('#rca').offset().top + 5);
+			});
+		} else if (currentPosition >= rcaHeight) {
+			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, $('#tsm').offset().top + 5);
+			});
+			$('#scrollDown').on('click', () => {
+				window.scrollTo(0, $('#rca').offset().top + 5);
 			});
 		}
 	});
@@ -50,5 +58,6 @@ const animateOnScroll = function(scrollDiv, scrollTarget) {
 // animateOnScroll('#err', '#err-fade-in'); add this back in when first page is done
 animateOnScroll('#gmc', '#gmc-fade-in');
 animateOnScroll('#tsm', '#tsm-fade-in');
+animateOnScroll('#rca', '#rca-fade-in');
 
 });
