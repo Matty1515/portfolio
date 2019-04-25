@@ -24,6 +24,8 @@ $title-blue: #5fb2d4;
 $font-header: "Times New Roman", Times, serif;
 $font-content: 'Poppins', sans-serif;
 
+$placeholder: 0px dashed black;
+
 /* ===== 2) Full Page & Grid ===== */
 
 html, body {
@@ -119,7 +121,7 @@ a {
 h1 {
 	font-family: $font-header;
   	line-height: 0.75;
-  	font-size: 150px;
+  	font-size: 140px;
   	color: $title-red;
   	margin-top: 10px;
   	margin-bottom: 30px;
@@ -131,10 +133,10 @@ h1 {
   	user-select: none;
 }
 .header-one {
-	font-size: 180px;
+	font-size: 1.2em;
 }
 .header-two {
-	font-size: 155px;
+	font-size: 1.03em;
 }
 h1:hover {
   opacity: 0.9;
@@ -160,9 +162,10 @@ section {
   color: $darkgrey;
   width: 600px;
   margin-bottom: 15px;
+  border: $placeholder;
 }
 .content-info {
-	font-family: $font-content;
+  font-family: $font-content;
   	font-size: 18px;
   	font-weight: 500;
   	margin-bottom: 30px;
@@ -186,36 +189,49 @@ section {
 }
 
 /* ===== 5) Content Right ===== 
--Add the real images */
+-fix responsivenees issues by changing margins to flex */
 
+.website-screenshots {
+  height: 90%;
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-end;
+  border: $placeholder;
+  align-content: space-around;
+}
 .placeholder-img {
 	background-color: white;
-	float: right;
 	height: 250px;
 	width: 528px; /* fits the 2.11 ratio to make the image look right */
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	margin-right: -110px;
-	margin-top: 30px;
 	transition: 0.5s;
 	border: 5px solid white;
-  	border-radius: 10px;
+  border-radius: 10px;
+  align-self: flex-end;
 
+  /*float: right;
+  margin-right: -110px;
+  margin-top: 30px;*/
 }
 .image-two {
 	background-color: white;
-  	float: right;
-  	height: 250px;
+  height: 250px;
 	width: 528px; /* fits the 2.11 ratio to make the image look right */
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  	margin-right: -20px;
-  	z-index: 1;
-  	margin-top: 20px;
-  	transition: 0.5s;
-  	border: 5px solid white;
-  	border-radius: 10px;
+  z-index: 1;
+  transition: 0.5s;
+  border: 5px solid white;
+  border-radius: 10px;
+  align-self: center;
+
+  /*float: right;
+  margin-right: -20px;
+  margin-top: 20px;*/
 }
 .placeholder-img:hover, .image-two:hover {
-  	transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* ===== 6) Alternative Styles ===== */
@@ -237,7 +253,7 @@ section {
 }
 
 /* ===== 7) Media Queries ===== */
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1350px) {
   .grid-content {
     grid-template-rows: 1fr 1fr;
     grid-gap: 0px;
@@ -249,5 +265,29 @@ section {
   .right-content {
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
+  }
+  .website-screenshots {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  h1 {
+    color: blue;
+  }
+  .scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  h1 {
+    color: red;
+  }
+  .content {
+    width: 110%;
+  }
+}
+@media (max-width: 575.98px) {
+  h1 {
+    color: green;
   }
 }
