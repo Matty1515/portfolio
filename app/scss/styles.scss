@@ -120,17 +120,17 @@ a {
 /* ===== 4) Content Left ===== */
 h1 {
 	font-family: $font-header;
-  	line-height: 0.75;
-  	font-size: 140px;
-  	color: $title-red;
-  	margin-top: 10px;
-  	margin-bottom: 30px;
-  	-webkit-touch-callout: none;
-  	-webkit-user-select: none;
-  	-khtml-user-select: none;
-  	-moz-user-select: none;
-  	-ms-user-select: none;
-  	user-select: none;
+	line-height: 0.75;
+	font-size: calc(5vw + 70px);
+	color: $title-red;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .header-one {
 	font-size: 1.2em;
@@ -146,10 +146,10 @@ h2 {
   color: $title-red;
   font-variant: small-caps;
   -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
   float: left;
   font-family: $font-content;
 }
@@ -175,10 +175,10 @@ section {
   	margin-left: -8px;
 }
 .content-skills i {
-  	line-height: 0.7;
-  	font-size: 80px;
-  	padding-right: 70px;
-  	transition: 0.5s;
+	line-height: 0.7;
+	font-size: 80px;
+	padding-right: calc(3.5vw + 20px);
+	transition: 0.5s;
 }
 .content-skills i:hover {
 	transform: scale(1.1);
@@ -204,7 +204,7 @@ section {
 .placeholder-img {
 	background-color: white;
 	height: 250px;
-	width: 528px; /* fits the 2.11 ratio to make the image look right */
+  width: 528px; /* fits the 2.11 ratio to make the image look right */
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	transition: 0.5s;
 	border: 5px solid white;
@@ -280,14 +280,27 @@ section {
 }
 @media (max-width: 767.98px) {
   h1 {
-    color: red;
+    color: green;
   }
   .content {
     width: 110%;
   }
+  .placeholder-img, .image-two {
+    width: 100%;
+    height: auto;
+  }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 560px) {
   h1 {
-    color: green;
+    /* color: green;*/
+    font-size: 85px; 
+    line-height: 0.8;
+  }
+  .content-skills i {
+    padding-right: 25px;
+    font-size: 65px;
+  }
+  .icons-two {
+    margin-left: 0px;
   }
 }
