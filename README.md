@@ -1,4 +1,4 @@
-# portfolio
-Portfolio of my current projects | under construction...
+# Portfolio
+Personal portfolio of my best projects
 
 *HTML5 | CSS3 | JavaScript | Sass | Gulp*
