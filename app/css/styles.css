@@ -169,17 +169,9 @@ section {
 .icons-two {
   margin-left: 45px; }
 
-/* ===== 5) Content Right ===== 
--fix responsivenees issues by changing margins to flex */
-.website-screenshots {
-  height: 90%;
-  width: 120%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: flex-end;
-  border: 0px dashed black;
-  align-content: space-around; }
+/* ===== 5) Content Right ===== */
+.right-content {
+  border: 0px dashed black; }
 
 .placeholder-img {
   background-color: white;
@@ -190,10 +182,9 @@ section {
   transition: 0.5s;
   border: 5px solid white;
   border-radius: 10px;
-  align-self: flex-end;
-  /*float: right;
-  margin-right: -110px;
-  margin-top: 30px;*/ }
+  position: relative;
+  top: 25px;
+  left: 110px; }
 
 .image-two {
   background-color: white;
@@ -201,14 +192,12 @@ section {
   width: 528px;
   /* fits the 2.11 ratio to make the image look right */
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  z-index: 1;
   transition: 0.5s;
   border: 5px solid white;
   border-radius: 10px;
-  align-self: center;
-  /*float: right;
-  margin-right: -20px;
-  margin-top: 20px;*/ }
+  position: relative;
+  top: 50px;
+  left: 40px; }
 
 .placeholder-img:hover, .image-two:hover {
   transform: scale(1.02); }
@@ -253,7 +242,9 @@ section {
     width: 110%; }
   .placeholder-img, .image-two {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+  .placeholder-img {
+    left: 90px; } }
 
 @media (max-width: 560px) {
   h1 {
