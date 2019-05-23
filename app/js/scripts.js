@@ -9,7 +9,7 @@ let buttonScroll = function() {
 		gmcHeight = $('#gmc').offset().top;
 		tsmHeight = $('#tsm').offset().top;
 		rcaHeight = $('#rca').offset().top;
-		if (currentPosition >= errHeight && currentPosition < gmcHeight) {
+		if (currentPosition >= -10 && currentPosition < gmcHeight) {
 			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, 0);
 			});
@@ -40,6 +40,7 @@ let buttonScroll = function() {
 		}
 	});
 };
+window.scrollTo(0, 1);
 buttonScroll();
 
 // animates the website screenshot images when the parent page is scrolled to
