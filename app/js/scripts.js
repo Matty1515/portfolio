@@ -5,37 +5,37 @@ $(document).ready(() => {
 let buttonScroll = function() {
 	$(window).scroll(function() {
 		currentPosition = $(this).scrollTop();
-		errHeight = $('#err').offset().top;
-		gmcHeight = $('#gmc').offset().top;
-		tsmHeight = $('#tsm').offset().top;
-		rcaHeight = $('#rca').offset().top;
-		if (currentPosition >= -10 && currentPosition < gmcHeight) {
+		oneHeight = $('#one').offset().top;
+		twoHeight = $('#two').offset().top;
+		threeHeight = $('#three').offset().top;
+		fourHeight = $('#four').offset().top;
+		if (currentPosition >= -10 && currentPosition < twoHeight) {
 			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, 0);
 			});
 			$('#scrollDown').on('click', () => {
-				window.scrollTo(0, $('#gmc').offset().top + 5);
+				window.scrollTo(0, $('#two').offset().top + 5);
 			});
-		} else if (currentPosition >= gmcHeight && currentPosition < tsmHeight) {
+		} else if (currentPosition >= twoHeight && currentPosition < threeHeight) {
 			$('#scrollUp').on('click', () => {
-				window.scrollTo(0, $('#err').offset().top + 5);
+				window.scrollTo(0, $('#one').offset().top + 5);
 			});
 			$('#scrollDown').on('click', () => {
-				window.scrollTo(0, $('#tsm').offset().top + 5);
+				window.scrollTo(0, $('#three').offset().top + 5);
 			});
-		} else if (currentPosition >= tsmHeight && currentPosition < rcaHeight) {
+		} else if (currentPosition >= threeHeight && currentPosition < fourHeight) {
 			$('#scrollUp').on('click', () => {
-				window.scrollTo(0, $('#gmc').offset().top + 5);
+				window.scrollTo(0, $('#two').offset().top + 5);
 			});
 			$('#scrollDown').on('click', () => {
-				window.scrollTo(0, $('#rca').offset().top + 5);
+				window.scrollTo(0, $('#four').offset().top + 5);
 			});
-		} else if (currentPosition >= rcaHeight) {
+		} else if (currentPosition >= fourHeight) {
 			$('#scrollUp').on('click', () => {
-				window.scrollTo(0, $('#tsm').offset().top + 5);
+				window.scrollTo(0, $('#three').offset().top + 5);
 			});
 			$('#scrollDown').on('click', () => {
-				window.scrollTo(0, $('#rca').offset().top + 5);
+				window.scrollTo(0, $('#four').offset().top + 5);
 			});
 		}
 	});
@@ -56,9 +56,9 @@ const animateOnScroll = function(scrollDiv, scrollTarget) {
 	   }
 	});
 };
-// animateOnScroll('#err', '#err-fade-in'); add this back in when first page is done
-animateOnScroll('#gmc', '#gmc-fade-in');
-animateOnScroll('#tsm', '#tsm-fade-in');
-animateOnScroll('#rca', '#rca-fade-in');
+// animateOnScroll('#one', '#one-fade-in'); add this back in when first page is done
+animateOnScroll('#two', '#two-fade-in');
+animateOnScroll('#three', '#three-fade-in');
+animateOnScroll('#four', '#four-fade-in');
 
 });

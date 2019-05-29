@@ -222,20 +222,20 @@ section {
 }
 
 /* ===== 6) Alternative Styles ===== */
-#gmc .full-page, #rca .full-page {
+#two .full-page, #four .full-page {
 	background-color: $darkgrey;
 }
-#gmc .content, #rca .content {
+#two .content, #four .content {
 	color: $lightgrey;
 }
-#gmc .border-element, #rca .border-element {
+#two .border-element, #four .border-element {
 	background-color: $darkgrey;
 }
-#gmc-fade-in, #tsm-fade-in, #rca-fade-in {
-	/* add #err-fade-in, back in when first page is done */
+#two-fade-in, #three-fade-in, #four-fade-in {
+	/* add #one-fade-in, back in when first page is done */
 	display: none;
 }
-#tsm h1, #tsm h2, #rca h1, #rca h2 {
+#three h1, #three h2, #four h1, #four h2 {
 	color: $title-blue;
 }
 
