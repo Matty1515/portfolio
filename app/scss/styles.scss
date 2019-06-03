@@ -235,8 +235,11 @@ section {
 	/* add #one-fade-in, back in when first page is done */
 	display: none;
 }
-#three h1, #three h2, #four h1, #four h2 {
+#one h1, #one h2, #two h1, #two h2 {
 	color: $title-blue;
+}
+#three h1, #three h2 {
+  color: #496064;
 }
 
 /* ===== 7) Media Queries ===== */
