@@ -9,6 +9,7 @@ let buttonScroll = function() {
 		twoHeight = $('#two').offset().top;
 		threeHeight = $('#three').offset().top;
 		fourHeight = $('#four').offset().top;
+		fiveHeight = $('#five').offset().top;
 		if (currentPosition >= -10 && currentPosition < twoHeight) {
 			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, 0);
@@ -30,12 +31,19 @@ let buttonScroll = function() {
 			$('#scrollDown').on('click', () => {
 				window.scrollTo(0, $('#four').offset().top + 5);
 			});
-		} else if (currentPosition >= fourHeight) {
+		} else if (currentPosition >= fourHeight && currentPosition < fiveHeight) {
 			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, $('#three').offset().top + 5);
 			});
 			$('#scrollDown').on('click', () => {
+				window.scrollTo(0, $('#five').offset().top + 5);
+			});
+		} else if (currentPosition >= fiveHeight) {
+			$('#scrollUp').on('click', () => {
 				window.scrollTo(0, $('#four').offset().top + 5);
+			});
+			$('#scrollDown').on('click', () => {
+				window.scrollTo(0, $('#five').offset().top + 5);
 			});
 		}
 	});

@@ -5,8 +5,9 @@
 	3) Border
 	4) Content Left
 	5) Content Right
-	6) Alternative Styles
-	7) Media Queries
+  6) DailyUI Page
+	7) Alternative Styles
+	8) Media Queries
 
 */
 
@@ -28,16 +29,11 @@ $font-content: 'Poppins', sans-serif;
 $placeholder: 0px dashed black;
 
 /* ===== 2) Full Page & Grid ===== */
-
 html, body {
   	margin: 0;
   	padding: 0;
   	overflow-x: hidden;
   	scroll-behavior: smooth;
-}
-img {
-	height: 100%;
-	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -94,7 +90,6 @@ a {
 }
 
 /* ===== 3) Border ===== */
-
 .border-page {
   	border-style: solid;
   	border-color: $silver;
@@ -145,19 +140,20 @@ h1:hover {
 }
 h2 {
   color: $title-red;
-  font-variant: small-caps;
+  font-family: $font-content;
+}
+.grid-content h2 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   float: left;
-  font-family: $font-content;
+  font-variant: small-caps;
 }
 section {
   margin-left: 20px;
 }
-
 .content {
   margin-left: 50px;
   color: $darkgrey;
@@ -193,6 +189,10 @@ section {
 .right-content {
   border: $placeholder;
 }
+.placeholder-img img, .image-two img {
+  height: 100%;
+  width: 100%;
+}
 .placeholder-img {
   background-color: white;
   height: 250px;
@@ -221,7 +221,55 @@ section {
   transform: scale(1.02);
 }
 
-/* ===== 6) Alternative Styles ===== */
+/* ===== 6) DailyUI Page ===== */
+.dailyui-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dailyui-grid h2 {
+  text-align: center;
+  margin: 0px;
+}
+.dailyui-grid h2:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.dailyui-grid p {
+  text-align: center;
+  font-family: $font-content;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: $darkgrey;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 350px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border: 10px solid white;
+  border-bottom: 5px solid white;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border: 0px dashed black;
+  border-radius: 10px;
+}
+.dailyui-intro {
+  max-width: 900px;
+  margin-bottom: 0px;
+}
+
+/* ===== 7) Alternative Styles ===== */
 #two .full-page, #four .full-page {
 	background-color: $darkgrey;
 }
@@ -235,14 +283,14 @@ section {
 	/* add #one-fade-in, back in when first page is done */
 	display: none;
 }
-#one h1, #one h2, #two h1, #two h2 {
+#one h1, #one h2, #two h1, #two h2, #five h1, #five h2 {
 	color: $title-blue;
 }
-#three h1, #three h2 {
+/* #three h1, #three h2 {
   color: #496064;
-}
+} */
 
-/* ===== 7) Media Queries ===== */
+/* ===== 8) Media Queries ===== */
 @media (max-width: 1350px) {
   .grid-content {
     grid-template-rows: 1fr 1fr;
@@ -288,5 +336,8 @@ section {
   }
   .icons-two {
     margin-left: 0px;
+  }
+  .card {
+    width: 250px;
   }
 }
