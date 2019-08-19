@@ -9,258 +9,76 @@
 	<title>Matthew Shaw | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="app/css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<script
-	  src="https://code.jquery.com/jquery-3.4.0.min.js"
-	  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-	  crossorigin="anonymous">
-	</script>
 	<script src="app/js/scripts.js"></script>
 </head>
 <body>
 
-<div class="scrollbar">
-    <ul>
-    	<li id="scrollUp"><i class="fas fa-chevron-up"></i></li>
-    	<li id="scrollDown"><i class="fas fa-chevron-down"></i></li>
-    </ul>
+<!-- === Title Page === -->
+<div class="full-screen">
+  <div class="left-nav">
+    <p><span><i class="fas fa-code"></i></span> Matthew Shaw</p>
+  </div>
+  <div class="right-nav">
+    <a href="#PortfolioCards" id="websitesNav"><p class="nav-item">Websites</p></a>
+    <a href="#Contact" id="contactNav"><p class="nav-item">Contact</p></a>
+  </div>
+  <div class="side-screen animated fadeInRight"></div>
+  <div class="text-screen animated fadeInUp">
+    <h1>Aspiring<br> Front-End<br> Developer</h1>
+    <p>Hi, I'm Matt an apsiring Front-End developer from Bristol, UK. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. I have a good grasp on the basics of the basics and now I am looking for...</p>
+    <div class="icon-wrapper">
+      <a href="https://github.com/Matty1515/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://codepen.io/Matty1515/" target="_blank"><i class="fab fa-codepen"></i></a>
+      <a href="mailto:imhullu15@gmail.com?Subject=Portfolio" target="_top"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
 </div>
 
-<!-- ===== TRAVEL SITE MOCKUP ===== -->
-<div id="one">
-	<div class="full-page">
-	  <div class="border-page">
-	    <div class="border-text">
-	      <h3 class="border-element border-name">Matthew Shaw</h3>
-	      <a href="https://github.com/Matty1515/" target="_blank"><h3 class="border-element border-github">GitHub</h3></a>
-	    </div>
-	    <div class="grid-content">
-	      <div class="left-content">
-	        <a href="https://matty1515.github.io/travel-website-mockup/" target="_blank"><h1 class="header"><span class="header-one">Travel</span> <span class="header-two">Site</span> <span class="header-three">Mockup</span></h1></a>
-	        <section>
-	          <h2 class="subheader subheader-info">info</h2>
-	          <div class="content content-info">
-	            <p>A website for finding useful travel information (weather forecast, popular places, etc.) about a selected city. Using modern fetch() syntax, the site makes requests to two external APIs (Foursquare and APIXU) and then renders the received JSON data into HTML.</p>
-	          </div>
-	        </section>
-	        <section>
-	          <h2 class="subheader subheader-skills">stack</h2>
-	          <div class="content content-skills">
-	            <div class="icons-one">
-	              <i class="fab fa-html5"></i>
-	              <i class="fab fa-css3"></i>
-	              <i class="fab fa-js"></i>
-	            </div>
-	            <br>
-	            <div class="icons-two">
-	              <i class="fab fa-gulp"></i>
-	              <i class="fab fa-sass"></i>
-	              <i class="fab fa-git"></i>
-	            </div>
-	            <!-- Add tooltips to icons -->
-	          </div>
-	        </section>
-	      </div>
-	      <div class="right-content">
-	        <!-- Change these to <img> -->
-	        <div id="one-fade-in" class="website-screenshots">
-	          <div class="placeholder-img">
-				<img alt="travel website mockup screenshot" src="app/img/tsm-screenshot1.jpg">
-	          </div>
-	          <div class="image-two">
-				<img alt="travel website mockup screenshot 2" src="app/img/tsm-screenshot2.jpg">
-	          </div>
-	        </div>
-	      </div>
+<div id="PortfolioCards">
+  <div class="cardfolder__left">
+	  <div class="card card--blue">
+	    <a href="https://matty1515.github.io/react-calculator-app/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/rca-screenshot1.jpg" /></a>
+	    <div class="card__text">
+	      <h1>ReactJS Calculator</h1>
+	      <p>A calculator web app built with ReactJS. User input from buttons is stored in the state, concatenated to create an equation, and then evaluated when the 'equals' sign is clicked. Calculator design is sculpted with CSS grid syntax to create a modern responsive layout.</p>
 	    </div>
 	  </div>
-	</div>
+	  <div class="card card--red">
+	    <a href="https://matty1515.github.io/buddha-quote-machine/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/bqm-screenshot2.jpg" /></a>
+	    <div class="card__text">
+	      <h1>Buddha Quotes</h1>
+	      <p>A ReactJS web app for finding a random quote from the Buddha! Quotes are stored in an array, displayed with JSX and can be generated at random by clicking 'next'. There is also a Twitter button which uses the Twitter API to tweet the the quote.</p>
+	    </div>
+	  </div>
+  </div>
+  <div class="cardfolder__right">
+	  <div class="card card--red">
+	    <a href="http://englishroserugby.com/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/err-screenshot1.jpg" /></a>
+	    <div class="card__text">
+	      <h1>English Rose Rugby</h1>
+	      <p>An ongoing project of mine is the website englishroserugby.com. It is a mobile-first project with a high emphasis on usability and responsive design. Images are modified with Gimp and webpages optimised with SEO best practices.</p>
+	    </div>
+	  </div>
+	  <div class="card card--blue">
+	    <a href="https://matty1515.github.io/travel-website-mockup/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/tsm-screenshot1.jpg" /></a>
+	    <div class="card__text">
+	      <h1>Travel Site Mockup</h1>
+	      <p>A website for finding useful travel information (weather forecast, popular places, etc.) about a selected city. Using modern fetch() syntax, the site makes requests to two external APIs (Foursquare and APIXU) and then renders the received JSON data into HTML.</p>
+	    </div>
+	  </div>
+  </div>
 </div>
 
-<!-- ===== REACT CALCULATOR APP ===== -->
-<div id="two">
-	<div class="full-page">
-	  <div class="border-page">
-	    <div class="border-text">
-	      <h3 class="border-element border-name">Matthew Shaw</h3>
-	      <a href="https://github.com/Matty1515/" target="_blank"><h3 class="border-element border-github">GitHub</h3></a>
-	    </div>
-	    <div class="grid-content">
-	      <div class="left-content">
-	        <a href="https://matty1515.github.io/react-calculator-app/" target="_blank"><h1 class="header"><span class="header-one">ReactJS</span> <span class="header-two">Calculator</span> </h1></a>
-	        <section>
-	          <h2 class="subheader subheader-info">info</h2>
-	          <div class="content content-info">
-	            <p>A calculator web app built with ReactJS. User input from buttons is stored in the state, concatenated to create an equation, and then evaluated when the 'equals' sign is clicked. Calculator design is sculpted with CSS grid syntax to create a modern responsive layout.</p>
-	          </div>
-	        </section>
-	        <section>
-	          <h2 class="subheader subheader-skills">stack</h2>
-	          <div class="content content-skills">
-	            <div class="icons-one">
-	              <i class="fab fa-html5"></i>
-	              <i class="fab fa-react"></i>
-	              <i class="fab fa-sass"></i>
-	            </div>
-	            <br>
-	            <div class="icons-two">
-	              <i class="fab fa-gulp"></i>
-	              <i class="fab fa-git"></i>
-	              <i class="fab fa-npm"></i>
-	            </div>
-	            <!-- Add tooltips to icons -->
-	          </div>
-	        </section>
-	      </div>
-	      <div class="right-content">
-	        <!-- Change these to <img> -->
-	        <div id="two-fade-in" class="website-screenshots">
-	          <div class="placeholder-img">
-				<img alt="react calculator app screenshot" src="app/img/rca-screenshot1.jpg">
-	          </div>
-	          <div class="image-two">
-				<img alt="react calculator app screenshot 2" src="app/img/rca-screenshot2.jpg">
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+<div id="DailyUI">
+	
 </div>
 
-<!-- ===== BUDDHA QUOTE MACHINE ===== -->
-<div id="three">
-	<div class="full-page">
-	  <div class="border-page">
-	    <div class="border-text">
-	      <h3 class="border-element border-name">Matthew Shaw</h3>
-	      <a href="https://github.com/Matty1515/" target="_blank"><h3 class="border-element border-github">GitHub</h3></a>
-	    </div>
-	    <div class="grid-content">
-	      <div class="left-content">
-	        <a href="https://matty1515.github.io/buddha-quote-machine/" target="_blank"><h1 class="header"><span class="header-one">Buddha</span> <span class="header-two">Quotes</span></h1></a>
-	        <section>
-	          <h2 class="subheader subheader-info">info</h2>
-	          <div class="content content-info">
-	            <p>A ReactJS web app for finding a random quote from the Buddha! Quotes are stored in an array, displayed with JSX and can be generated at random by clicking 'next'. The Twitter button uses the Twitter API to tweet the the quote, and the 'copy' button copies it to the clipboard.</p>
-	          </div>
-	        </section>
-	        <section>
-	          <h2 class="subheader subheader-skills">stack</h2>
-	          <div class="content content-skills">
-	            <div class="icons-one">
-	              <i class="fab fa-html5"></i>
-	              <i class="fab fa-react"></i>
-	              <i class="fab fa-sass"></i>
-	            </div>
-	            <br>
-	            <div class="icons-two">
-	              <i class="fab fa-gulp"></i>
-	              <i class="fab fa-git"></i>
-	              <i class="fab fa-npm"></i>
-	            </div>
-	            <!-- Add tooltips to icons -->
-	          </div>
-	        </section>
-	      </div>
-	      <div class="right-content">
-	        <!-- Change these to <img> -->
-	        <div id="three-fade-in" class="website-screenshots">
-	          <div class="placeholder-img">
-				<img alt="buddha quote machine screenshot" src="app/img/bqm-screenshot1.jpg">
-	          </div>
-	          <div class="image-two">
-				<img alt="buddha quote machine screenshot 2" src="app/img/bqm-screenshot2.jpg">
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</div>
-
-<!-- ===== ENGLISH ROSE RUGBY ===== -->
-<div id="four">
-	<div class="full-page">
-	  <div class="border-page">
-	    <div class="border-text">
-	      <h3 class="border-element border-name">Matthew Shaw</h3>
-	      <a href="https://github.com/Matty1515/" target="_blank"><h3 class="border-element border-github">GitHub</h3></a>
-	    </div>
-	    <div class="grid-content">
-	      <div class="left-content">
-	        <a href="https://matty1515.github.io/english-rose-rugby/" target="_blank"><h1 class="header"><span class="header-one">English</span> <span class="header-two">Rose</span> <span class="header-three">Rugby</span></h1></a>
-	        <section>
-	          <h2 class="subheader subheader-info">info</h2>
-	          <div class="content content-info">
-	            <p>An ongoing project of mine is the website englishroserugby.com. It is a mobile-first project with a high emphasis on usability and responsive design. Images are modified with Gimp and webpages optimised with SEO best practices.</p>
-	          </div>
-	        </section>
-	        <section>
-	          <h2 class="subheader subheader-skills">stack</h2>
-	          <div class="content content-skills">
-	            <div class="icons-one">
-	              <i class="fab fa-html5"></i>
-	              <i class="fab fa-css3"></i>
-	              <i class="fab fa-js"></i>
-	            </div>
-	            <br>
-	            <div class="icons-two">
-	              <i class="fab fa-github-square"></i>
-	              <i class="fab fa-git"></i>
-	            </div>
-	            <!-- Add tooltips to icons -->
-	          </div>
-	        </section>
-	      </div>
-	      <div class="right-content">
-	        <!-- Change these to <img> -->
-	        <div id="four-fade-in" class="website-screenshots">
-	          <div class="placeholder-img">
-				<img alt="english rose rugby screenshot" src="app/img/err-screenshot1.jpg">
-	          </div>
-	          <div class="image-two">
-				<img alt="english rose rugby screenshot 2" src="app/img/err-screenshot2.jpg">
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</div>
-
-<!-- ===== DAILY UI ===== -->
-<div id="five">
-	<div class="full-page">
-	  <div class="border-page">
-	    <div class="border-text">
-	      <h3 class="border-element border-name">Matthew Shaw</h3>
-	      <a href="https://github.com/Matty1515/" target="_blank"><h3 class="border-element border-github">GitHub</h3></a>
-	    </div>
-	    <div class="dailyui-grid">
-		  <a href="https://codepen.io/collection/DQgeem/" target="_blank"><h1>DailyUI</h1></a>
-		  <div class="intro">
-		    <p class="dailyui-intro">To hone my CSS skills, I have taken on the DailyUI challenge! This involves creating a different UI element every day for 20 weeks. Below are a few examples of my creations:</p>
-		  </div>
-		  <div class="card-container">
-		  	<div class="card">
-		  		<img src="app/img/dailyui-screenshot3.jpg" alt="DailyUI subscribe screenshot"/>
-		  		<a href="https://codepen.io/Matty1515/pen/OGGLZg" target="_blank"><h2>Subscribe :: 026</h2></a>
-		  		<p>Design an email subscribe form, button or widget.</p>
-		  	</div>
-		  	<div class="card">
-		  		<img src="app/img/dailyui-screenshot2.jpg" alt="DailyUI file upload screenshot"/>
-		  		<a href="https://codepen.io/Matty1515/pen/OYJeoV" target="_blank"><h2>File Upload :: 031</h2></a>
-		  		<p>Design a file upload element with a drag box and example files.</p>
-		  	</div>
-		  	<div class="card">
-		  		<img src="app/img/dailyui-screenshot1-1.jpg" alt="daily ui screenshot"/>
-		  		<a href="https://codepen.io/Matty1515/pen/qGMVYr" target="_blank"><h2>Coming Soon :: 048</h2></a>
-		  		<p>Design a 'coming soon' element with an email form.</p>
-		  	</div>
-		  </div>
-	    </div>
-	  </div>
-	</div>
+<div id="Contact">
+  <div class="contact__wrapper">
+	<h1>Want to get in contact?</h1>
+	<p>Click the email button below and send me a message!</p>
+	<a href="mailto:imhullu15@gmail.com?Subject=Portfolio" target="_top"><button><span><i class="fas fa-envelope"></i></span> Email</button></a>
+  </div>
 </div>
 
 </body>
