@@ -105,6 +105,7 @@ body {
   padding: 50px 0px;
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 .card {
   max-width: 450px;
@@ -146,6 +147,18 @@ body {
 }
 .card--red h1 {
   text-decoration-color: #e03339;
+}
+.card--websites {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card--websites h1 {
+  text-decoration: none;
+}
+.card--websites i {
+  font-size: 32px;
 }
 
 /* === Contact Page === */
@@ -192,3 +205,17 @@ body {
 }
 
 /* on smaller screens get rid of right-nav */
+@media (max-width: 900px) {
+  .right-nav {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .side-screen {
+    display: none;
+  }
+  #PortfolioCards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

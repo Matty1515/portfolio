@@ -9,6 +9,7 @@
 	<title>Matthew Shaw | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="app/css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="app/js/scripts.js"></script>
 </head>
 <body>
@@ -22,8 +23,8 @@
     <a href="#PortfolioCards" id="websitesNav"><p class="nav-item">Websites</p></a>
     <a href="#Contact" id="contactNav"><p class="nav-item">Contact</p></a>
   </div>
-  <div class="side-screen animated fadeInRight"></div>
-  <div class="text-screen animated fadeInUp">
+  <div class="side-screen" data-aos="fade-left"></div>
+  <div class="text-screen" data-aos="zoom-in-up">
     <h1>Aspiring<br> Front-End<br> Developer</h1>
     <p>Hi, I'm Matt an apsiring Front-End developer from Bristol. I am passionate about the web and love reading and learning more about it. I specialise in creating responsive and inventive websites, using new technologies to push the boundaries.</p>
     <div class="icon-wrapper">
@@ -36,14 +37,17 @@
 
 <div id="PortfolioCards">
   <div class="cardfolder__left">
-	  <div class="card card--blue">
+  	  <div class="card card--websites">
+		<h1><span><i class="fas fa-globe"></i></span> Websites</h1>
+  	  </div>
+	  <div class="card card--blue" data-aos="fade-up-right">
 	    <a href="https://matty1515.github.io/react-calculator-app/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/rca-screenshot1.jpg" /></a>
 	    <div class="card__text">
 	      <h1>ReactJS Calculator</h1>
 	      <p>A calculator web app built with ReactJS. User input from buttons is stored in the state, concatenated to create an equation, and then evaluated when the 'equals' sign is clicked. Calculator design is sculpted with CSS grid syntax to create a modern responsive layout.</p>
 	    </div>
 	  </div>
-	  <div class="card card--red">
+	  <div class="card card--red" data-aos="fade-up-right">
 	    <a href="https://matty1515.github.io/buddha-quote-machine/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/bqm-screenshot2.jpg" /></a>
 	    <div class="card__text">
 	      <h1>Buddha Quotes</h1>
@@ -52,14 +56,14 @@
 	  </div>
   </div>
   <div class="cardfolder__right">
-	  <div class="card card--red">
+	  <div class="card card--red" data-aos="fade-up-left">
 	    <a href="http://englishroserugby.com/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/err-screenshot1.jpg" /></a>
 	    <div class="card__text">
 	      <h1>English Rose Rugby</h1>
 	      <p>An ongoing project of mine is the website englishroserugby.com. It is a mobile-first project with a high emphasis on usability and responsive design. Images are modified with Gimp and webpages optimised with SEO best practices.</p>
 	    </div>
 	  </div>
-	  <div class="card card--blue">
+	  <div class="card card--blue" data-aos="fade-up-left">
 	    <a href="https://matty1515.github.io/travel-website-mockup/" target="_blank"><img src="https://matty1515.github.io/portfolio/app/img/tsm-screenshot1.jpg" /></a>
 	    <div class="card__text">
 	      <h1>Travel Site Mockup</h1>
@@ -81,5 +85,9 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
