@@ -12,6 +12,7 @@ body {
 /* === Title Page === */
 .full-screen {
   min-height: 800px;
+  overflow-x: hidden;
   display: grid; 
   grid-template-columns: 1fr 4fr 4fr 1fr; 
   grid-template-rows: 1fr 9fr;
@@ -20,7 +21,7 @@ body {
 }
 .side-screen {
   grid-area: 1 / 3 / 3 / 5;
-  background-image: url("../img/lucas-benjamin-no-background.png");
+  background-image: url("../img/blue-red-fire-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
