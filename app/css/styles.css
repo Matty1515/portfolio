@@ -158,6 +158,63 @@ body {
 .card--websites i {
   font-size: 32px; }
 
+/* === Marquee Page === */
+#Marquee h1 {
+  font-size: 35px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  max-width: 960px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 20px; }
+
+.marquee {
+  width: 100%;
+  height: 130px;
+  margin: 20px 0px;
+  overflow: hidden;
+  position: relative; }
+
+.marquee__wrapper {
+  display: block;
+  width: 200%;
+  position: absolute;
+  overflow: hidden; }
+
+.marquee span {
+  width: 50%;
+  font-size: 100px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: calc(6px + 9vw); }
+
+.marquee--blue {
+  background-color: #529dad;
+  animation: marquee-left 10s linear infinite; }
+
+.marquee--blue span {
+  float: left; }
+
+.marquee--red {
+  background-color: #e03339;
+  animation: marquee-right 10s linear infinite; }
+
+.marquee--red span {
+  float: right; }
+
+@keyframes marquee-left {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+
+@keyframes marquee-right {
+  0% {
+    right: 0; }
+  100% {
+    right: -100%; } }
+
 /* === Contact Page === */
 #Contact {
   display: flex;
