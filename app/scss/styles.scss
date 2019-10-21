@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:800|Montserrat|Open+Sans:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -10,6 +10,63 @@ body {
   overflow-x: hidden;
 }
 
+/* === Overlay === */
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3134;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  position: fixed;
+  z-index: 2;
+}
+.overlay h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 75px;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+.overlay p {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.overlay hr {
+  width: 295px;
+  height: 5px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.hrfolder {
+  display: flex;
+}
+.hr--blue {
+  background-color: #529dad;
+  border-color: transparent;
+}
+.hr--red {
+  background-color: #d83c38;
+  border-color: transparent;
+}
+
 /* === Title Page === */
 .full-screen {
   min-height: 800px;
@@ -19,6 +76,8 @@ body {
   grid-template-rows: 1fr 9fr;
   grid-column-gap: 30px;
   grid-row-gap: 0px; 
+  position: relative;
+  z-index: 1;
 }
 .side-screen {
   grid-area: 1 / 3 / 3 / 5;
@@ -307,8 +366,9 @@ body {
   opacity: 0.8;
 }
 
-/* on smaller screens get rid of right-nav */
+
 @media (max-width: 1100px) {
+  /* for getting rid of the right nav when there is no room for it */
   .right-nav {
     display: none;
   }
@@ -328,6 +388,14 @@ body {
     display: none;
   }
 }
+@media (max-width: 632px) {
+  /* for making the overlay responsive */
+  .overlay hr {
+    width: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
 @media (max-width: 500px) {
   .text-screen h1 {
     font-size: 75px;
@@ -337,5 +405,10 @@ body {
   }
   .uigrid__three {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .overlay h1 {
+    font-size: 60px;
   }
 }

@@ -10,23 +10,31 @@
 	<link rel="stylesheet" type="text/css" href="app/css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<script src="app/js/scripts.js"></script>
 </head>
 <body>
+<!-- === Overlay === -->
+<section class="overlay">
+  <h1 class="overlay__title">Matthew Shaw</h1>
+  <div class="hrfolder">
+    <hr class="hr hr--blue"></hr>
+    <hr class="hr hr--red"></hr>
+  </div>
+  <p class="overlay__subtext">Aspiring Front-End Developer</p>
+</section>
 
 <!-- === Title Page === -->
 <div class="full-screen">
-  <div class="left-nav">
+  <div class="both-nav left-nav">
     <p><span><i class="fas fa-code"></i></span> Matthew Shaw</p>
   </div>
-  <div class="right-nav">
+  <div class="both-nav right-nav">
     <a href="#PortfolioCards" id="websitesNav"><p class="nav-item">Websites</p></a>
     <a href="#Marquee" id="stackNav"><p class="nav-item">Stack</p></a>
     <a href="#DailyUI" id="uiNav"><p class="nav-item">UI</p></a>
     <a href="#Contact" id="contactNav"><p class="nav-item">Contact</p></a>
   </div>
-  <div class="side-screen" data-aos="fade-left"></div>
-  <div class="text-screen" data-aos="zoom-in-up">
+  <div class="side-screen"></div>
+  <div class="text-screen">
     <h1>Aspiring<br> Front-End<br> Developer</h1>
     <p>Hi, I'm Matt an aspiring Front-End developer from Bristol, UK. I specialise in creating imaginative websites and responsive UI, using new frameworks and tools to push boundaries and materialise great designs. Scroll down to see what I have already made.</p>
     <div class="icon-wrapper">
@@ -162,6 +170,8 @@
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src="app/js/scripts.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
