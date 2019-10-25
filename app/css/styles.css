@@ -383,8 +383,14 @@ body {
   .uicontainer {
     width: 50%; }
   .uigrid__three {
-    display: none; } }
+    display: none; }
+  .marquee span {
+    font-size: 80px; }
+  .marquee {
+    height: 100px; } }
 
 @media (max-width: 400px) {
+  .text-screen h1 {
+    font-size: 60px; }
   .overlay h1 {
     font-size: 60px; } }
